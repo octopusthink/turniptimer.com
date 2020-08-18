@@ -26,15 +26,16 @@ export const App = (props) => {
         css={css`
           margin: 0 auto;
           max-width: ${config.siteWidth};
-          padding: 1.6rem;
+          padding: 0;
         `}
       >
         <SiteHeader />
         <main
           id="content"
           css={css`
-            margin: 2.4rem auto;
+            margin: 0 auto;
             max-width: ${config.contentWidth};
+            padding: 1.6rem;
           `}
         >
           {children}

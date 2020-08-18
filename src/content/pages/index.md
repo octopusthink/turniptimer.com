@@ -1,7 +1,15 @@
 ---
-title: Your cool home page.
+title: Sign up for the beta.
 ---
 
-This is your new homepage!
+Turnip is an unobtrusive timer app designed for busy freelancers who need to get things done. We're freelancers ourselves, so we know how valuable your time is. We built Turnip to give you what you need to do your work, and then get out of your way.
 
-[Learn more](/about).
+![A screenshot of Turnip showing a list of timeslips in the menu bar.](src/images/timeslips.png)
+
+Turnip is currently available for Mac and Windows. It offers both a standalone version and a FreeAgent integration. (We plan to offer more integrations in the future—drop us a line if you have an integration you'd like us to offer!)
+
+![A screenshot of Turnip showing charts of time breakdown during the week.](src/images/stats.png)
+
+Beta testers will receive free updates to the app for the duration of the beta period. Once the app is released, all beta testers will also receive a free premium subscription for a year, plus discounted subscription thereafter, along with our infinite gratitude. ❤️
+
+[Download for Mac] [Download for Windows]
