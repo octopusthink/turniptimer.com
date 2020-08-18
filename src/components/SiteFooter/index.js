@@ -12,7 +12,7 @@ const SiteFooter = () => {
         margin: 0 auto;
         max-width: ${config.contentWidth};
         max-width: ${config.siteContentWidth};
-        padding: 5.6rem 0 0;
+        padding: 8rem 0 1.6rem;
         text-align: center;
       `}
     >
