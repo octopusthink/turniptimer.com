@@ -21,7 +21,7 @@ const config = {
   siteRss: '/blog/rss.xml',
   twitter: '@tweettweet',
   // Copyright string for the footer of the website and RSS feed.
-  copyright: `Copyright © ${new Date().getFullYear()}. Your name here.`,
+  copyright: `Made with ❤️ by Octopus Think`,
   // Fallback image used when sharing to social sites.
   defaultImage: '/og-images/default.png',
   imageHeight: '630',

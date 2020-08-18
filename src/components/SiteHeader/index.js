@@ -14,7 +14,7 @@ const SiteHeader = () => {
         css={css`
           width: 100%;
           margin-top: -5.6rem;
-          margin-bottom: -12rem;
+          margin-bottom: -8rem;
         `}
       />
     </header>

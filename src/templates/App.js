@@ -35,7 +35,7 @@ export const App = (props) => {
           css={css`
             margin: 0 auto;
             max-width: ${config.contentWidth};
-            padding: 1.6rem;
+            padding: 0 1.6rem;
           `}
         >
           {children}
