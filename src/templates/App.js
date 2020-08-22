@@ -18,6 +18,10 @@ export const App = (props) => {
         styles={css`
           body {
             background: ${theme.colors.neutral.white};
+            background-image: url(/number2.png), url(/number5.png);
+            background-position: top left, top right;
+            background-size: 30vh;
+            background-repeat: no-repeat;
             margin: 0;
           }
         `}

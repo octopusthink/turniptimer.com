@@ -12,9 +12,13 @@ const SiteHeader = () => {
         src="src/images/beta-header.png"
         alt="Turnip: Time for freelancers."
         css={css`
+          margin-bottom: -4rem;
           width: 100%;
-          margin-top: -5.6rem;
-          margin-bottom: -8rem;
+
+          @media screen and (min-width: 560px) {
+            margin-top: -5.6rem;
+            margin-bottom: -8rem;
+          }
         `}
       />
     </header>
