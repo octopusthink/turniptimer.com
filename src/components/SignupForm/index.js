@@ -6,11 +6,10 @@ const SignupForm = () => {
   const theme = useTheme();
   return (
     <form
-      action="https://buttondown.email/api/emails/embed-subscribe/octopusthink"
+      action="https://buttondown.email/api/emails/embed-subscribe/octolabs"
       method="post"
       target="popupwindow"
-      onsubmit="window.open('https://buttondown.email/octopusthink', 'popupwindow')"
-      class="embeddable-buttondown-form"
+      onsubmit="window.open('https://buttondown.email/octolabs', 'popupwindow')"
       css={css`
         text-align: center;
         @media screen and (min-width: 560px) {
@@ -21,7 +20,6 @@ const SignupForm = () => {
     >
       <input type="hidden" value="1" name="embed"></input>
       <input type="hidden" name="tag" value="turnip-beta"></input>
-
       <div
         css={css`
           @media screen and (max-width: 559px) {
@@ -43,6 +41,7 @@ const SignupForm = () => {
       <Button
         noMargin
         primary
+        type="submit"
         css={css`
           white-space: nowrap;
           @media screen and (min-width: 560px) {
