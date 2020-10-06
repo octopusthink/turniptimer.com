@@ -56,7 +56,7 @@ const colors = {
   cyan800: '#006e76',
   cyan900: '#004f54',
 
-  blue0: '#e6edf3',
+  blue0: '#E3F2FC',
   blue100: '#cbdae7',
   blue200: '#acc5d8',
   blue300: '#87aac7',
@@ -144,8 +144,8 @@ export const theme = {
     state: {
       interactive: colors.purple200,
       interactiveText: colors.purple600,
-      hover: colors.cyan200,
-      hoverText: colors.cyan600,
+      hover: colors.blue200,
+      hoverText: colors.blue600,
       focusOutline: colors.blue200,
       focusText: colors.blue500,
       disabled: colors.grey700,
@@ -164,8 +164,8 @@ export const theme = {
       inverseDark: colors.grey300,
       emphasis: colors.grey800,
       emphasisBackground: 'transparent',
-      strong: colors.black,
-      strongBackground: colors.yellow100,
+      strong: colors.blue800,
+      strongBackground: colors.blue0,
     },
 
     buttons: {
@@ -290,6 +290,15 @@ export const theme = {
       xLarge: 32,
       xxLarge: 48,
     },
+  },
+
+  // Extra site config type stuff.
+  site: {
+    mobilePadding: '1.6rem',
+    tabletPadding: '3.2rem',
+    desktopPadding: '6.4rem',
+    maxContentWidth: '64rem',
+    maxSiteWidth: '120rem',
   },
 };
 

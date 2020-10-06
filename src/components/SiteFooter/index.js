@@ -1,11 +1,10 @@
 import { css } from '@emotion/core';
-import { Paragraph, Link, useTheme } from '@octopusthink/nautilus';
+import { Paragraph, Link } from '@octopusthink/nautilus';
 import React from 'react';
 
 import config from 'data/SiteConfig';
 
 const SiteFooter = () => {
-  const theme = useTheme();
   return (
     <footer
       css={css`

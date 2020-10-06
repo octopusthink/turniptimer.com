@@ -1,9 +1,8 @@
 import { css } from '@emotion/core';
-import { Button, TextField, useTheme } from '@octopusthink/nautilus';
+import { Button, TextField } from '@octopusthink/nautilus';
 import React from 'react';
 
 const SignupForm = () => {
-  const theme = useTheme();
   return (
     <form
       action="https://buttondown.email/api/emails/embed-subscribe/octolabs"
@@ -12,6 +11,7 @@ const SignupForm = () => {
       onsubmit="window.open('https://buttondown.email/octolabs', 'popupwindow')"
       css={css`
         text-align: center;
+
         @media screen and (min-width: 560px) {
           display: flex;
           align-items: flex-end;
