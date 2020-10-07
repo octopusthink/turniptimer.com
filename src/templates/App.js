@@ -38,8 +38,11 @@ export const App = (props) => {
           id="content"
           css={css`
             margin: 0 auto;
-            //max-width: ${config.contentWidth};
             padding: 0 1.6rem;
+
+            li:before {
+              display: none;
+            }
           `}
         >
           {children}
