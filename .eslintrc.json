@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "@octopusthink/eslint-config"
+  ],
+  "rules": {
+    "react/prop-types": "off"
+  }
+}
