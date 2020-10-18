@@ -51,8 +51,6 @@ const SignupForm = () => {
       >
         Sign me up!
       </Button>
-      {/* <input type="email" name="email" id="bd-email"></input> */}
-      {/* <input type="submit" value="Subscribe"></input> */}
     </form>
   );
 };
