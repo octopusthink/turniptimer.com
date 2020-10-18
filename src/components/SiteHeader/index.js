@@ -2,7 +2,7 @@ import { css } from '@emotion/core';
 import { SkipLink } from '@octopusthink/nautilus';
 import React from 'react';
 
-import Image from 'components/image';
+import Image from 'components/Image';
 
 const SiteHeader = () => {
   return (
