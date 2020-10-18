@@ -1,0 +1,53 @@
+---
+name: Publish Website
+
+on:
+  push:
+    branches:
+      - '!*'
+      - master
+  schedule:
+    - cron: '45 9 * * *'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - uses: actions/cache@v1
+        name: Cache npm modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - uses: actions/cache@v1
+        name: Cache Gatsby build
+        with:
+          path: ./.cache
+          key: ${{ runner.os }}-node-gatsby-cache-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('static/**/**') }}
+          restore-keys: |
+            ${{ runner.os }}-node-gatsby-cache-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('static/**/**') }}
+      - uses: actions/cache@v1
+        name: Cache Gatsby public folder
+        with:
+          path: ./public
+          key: ${{ runner.os }}-node-gatsby-public-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('static/**/**') }}
+          restore-keys: |
+            ${{ runner.os }}-node-gatsby-public-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('static/**/**') }}
+      - name: Install dependencies
+        run: npm install
+      - name: Lint JS
+        run: npm run lint
+      - name: Build website
+        run: npm run build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@2.0.0
+        env:
+          ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN_GH_PAGES }}
+          BRANCH: gh-pages
+          COMMIT_EMAIL: robots@octopusthink.com
+          COMMIT_NAME: Octopus Think Robot
+          CNAME: turniptimer.com
+          FOLDER: public
