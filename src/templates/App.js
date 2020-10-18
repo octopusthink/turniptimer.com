@@ -18,6 +18,10 @@ export const App = (props) => {
         styles={css`
           body {
             background: ${theme.colors.neutral.white};
+            background-image: url(/number2.png), url(/number5.png);
+            background-position: top left, top right;
+            background-size: 30vh;
+            background-repeat: no-repeat;
             margin: 0;
           }
         `}
@@ -26,15 +30,19 @@ export const App = (props) => {
         css={css`
           margin: 0 auto;
           max-width: ${config.siteWidth};
-          padding: 1.6rem;
+          padding: 0;
         `}
       >
         <SiteHeader />
         <main
           id="content"
           css={css`
-            margin: 2.4rem auto;
-            max-width: ${config.contentWidth};
+            margin: 0 auto;
+            padding: 0 1.6rem;
+
+            li:before {
+              display: none;
+            }
           `}
         >
           {children}

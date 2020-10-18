@@ -1,13 +1,13 @@
 const config = {
   // Set to your site's language/locale.
-  language: 'en-US',
+  language: 'en-GB',
   // Site title.
-  siteTitle: 'Ghost Ship Gatsby Starter',
+  siteTitle: 'Turnip: A timer for freelancers',
   // Short site title for homescreen (PWA/Progressive Web Apps).
   // Staying under 12 characters will prevent any truncation on phone screens.
-  siteTitleShort: 'Ghost Ship',
+  siteTitleShort: 'Turnip',
   // Alternative site title for SEO.
-  siteTitleAlt: 'Ghost Ship: Stranded on an island with but your wits and React',
+  siteTitleAlt: 'Turnip: The timer for freelancers.',
   // Logo used for SEO and manifest.
   siteLogo: '/logos/logo-1024.png',
   // Domain of your website without pathPrefix.
@@ -19,9 +19,9 @@ const config = {
     'Ghost ship is a Gatsby starter that offers blogging, optimised images, a portfolio, and more.',
   // Path to the RSS file.
   siteRss: '/blog/rss.xml',
-  twitter: '@tweettweet',
+  twitter: '@octopusthinks',
   // Copyright string for the footer of the website and RSS feed.
-  copyright: `Copyright © ${new Date().getFullYear()}. Your name here.`,
+  copyright: `Made with ❤️ by Octopus Think`,
   // Fallback image used when sharing to social sites.
   defaultImage: '/og-images/default.png',
   imageHeight: '630',
@@ -44,9 +44,9 @@ const config = {
 
   /* ------------ Matamo Tracking Settings ------------ */
   matomoOptions: {
-    siteId: null,
-    matomoUrl: 'https://your.matomoserver.com',
-    siteUrl: 'https://yourdomain.com',
+    siteId: 10,
+    matomoUrl: 'https://analytics.octopusth.ink',
+    siteUrl: 'https://turniptimer.com',
     requireConsent: false,
     // Removes the need for cookie notices and is less creepy! :-)
     disableCookies: true,
@@ -55,7 +55,7 @@ const config = {
   /* ------------ Visual Appearance Settings ------------ */
   // Replace this with a Nautilus Theme object.
   // See: https://nautilus.octopusthink.com
-  nautilusTheme: null, // require('./theme'),
+  // nautilusTheme: require('./theme'),
   // Site width is total width of your site including headers, footers, and backgrounds, expressed in a value CSS understands.
   siteWidth: '128rem',
   // Content width is the width of content (ie, paragraphs and blocks of text), expressed in a CSS value.

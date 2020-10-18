@@ -2,16 +2,13 @@ import React from 'react';
 import Nautilus from '@octopusthink/nautilus';
 import { Link } from 'gatsby';
 
-import config from 'data/SiteConfig';
+import theme from 'data/theme';
 
 const NautilusWrapper = (props) => {
   const { children } = props;
 
   return (
-    <Nautilus
-      config={{ LinkComponent: Link }}
-      theme={config.nautilusTheme ? config.nautilusTheme : undefined}
-    >
+    <Nautilus config={{ LinkComponent: Link }} theme={theme}>
       {children}
     </Nautilus>
   );
