@@ -1,53 +1,43 @@
-# Ghost Ship Gatsby Starter
+# [turniptimer.com](https://turniptimer.com/)
 
-Create a Gatsby site that includes blog posts, Markdown pages, and [Nautilus](https://nautilus.octopusthink.com/).
+This is the code powering the blog and website for [Turnip](https://turniptimer.com/), a time tracker for freelancers and small businesses.
 
-## 🚀 Quick start
+## Development
 
-1.  **Create a Gatsby site.**
+### Getting started
 
-    Use the Gatsby CLI to create a new site, specifying the `ghost-ship` as your starter:
+turniptimer.com uses Gatsby. To run a local copy, clone the repo to your local machine, and start the Gatsby server:
 
-    ```bash
-    # Create a new Gatsby site using the ghost-ship starter.
-    npx gatsby new my-site https://github.com/octopusthink/ghost-ship
-    ```
+```bash
+npm start
+```
 
-2.  **Start the development server.**
+That's it! You can now find the site at [localhost:8000](http://localhost:8000/).
 
-    Navigate into your new site’s directory, install the dependencies, and start the development server:
+All changes you make to front-end React code and styles will immediately be loaded. Any changes to `gatbsy-config.js` or `gatsby-node.js` require restarting the Gatsby server.
 
-    ```bash
-    cd my-site/
-    yarn start # or `npm start` if you use `npm`.
-    ```
+### Running tests
 
-3.  **Open the source code and start editing!**
+All pull requests must pass the linter rules to be merged into `master`. Tests are run against branches using GitHub Actions, but you can also run tests locally:
 
-    Your site is now running at [`http://localhost:8000/`](http://localhost:8000/)!
+```bash
+npm run lint
+```
 
+### Using the design system
 
-## SEO
+turniptimer.com uses the [Nautilus](https://nautilus.octopusthink.com) design system under the hood. Since Nautilus is still very much under development, it's pulling from the latest changes made to the `master` GitHub branch, rather than the published version.
 
-### Page frontmatter
+To pull the latest changes, uninstall and reinstall the Nautilus dependency:
 
-There are a few SEO-specific properties you can set for any page or other content type:
-
-`metaDescription:` For setting the meta description.
-`thumbnail`: For setting a thumbnail image to appear when shared on social media.
-`canonical`: For setting the canonical url.
-
-These are all optional—don't use them if you don't need them!
-
-
-### Thumbnail images
-
-For each page, you can set a custom thumbnail that will be used when sharing on Twitter, Facebook, etc. If no thumbnail is set, the page will use the fallback thumbnail, as defined in your `SiteConfig.js`.
-
-We recommend using the size 630x1200 for maximum compatibility. These images should be stored in the `static/` directory.
+```bash
+npm uninstall nautilus && npm install --save octopusthink/nautilus
+```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+Copyright (c) 2020 [Octopus Think Ltd](https://octopusthink.com/).
 
+The source code is shared under a [Creative Commons 4.0 Attribution-ShareAlike (CC-BY-SA-4.0)](https://creativecommons.org/licenses/by-sa/4.0) license. Basically this means you can use stuff that we've written on here if you attribute us and release your content under the same license—even for commercial purposes!
 
+See the [LICENSE.txt](LICENSE.txt) file for details.
