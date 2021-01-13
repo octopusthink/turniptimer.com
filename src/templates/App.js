@@ -18,10 +18,9 @@ export const App = (props) => {
         styles={css`
           body {
             background: ${theme.colors.neutral.white};
-            background-image: url(/number2.png), url(/number5.png);
-            background-position: top left, top right;
-            background-size: 30vh;
-            background-repeat: no-repeat;
+            background-image: url(/background-texture.jpg);
+            background-position: center;
+            background-repeat: repeat;
             margin: 0;
           }
         `}
@@ -29,7 +28,7 @@ export const App = (props) => {
       <div
         css={css`
           margin: 0 auto;
-          max-width: ${config.siteWidth};
+          //max-width: ${config.siteWidth};
           padding: 0;
         `}
       >
@@ -42,6 +41,10 @@ export const App = (props) => {
 
             li:before {
               display: none;
+            }
+
+            h2 {
+              color: #06477d;
             }
           `}
         >
