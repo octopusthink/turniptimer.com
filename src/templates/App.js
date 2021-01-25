@@ -43,8 +43,78 @@ export const App = (props) => {
               display: none;
             }
 
-            h2 {
-              color: #06477d;
+            h2 strong {
+              font-weight: 400;
+              position: relative;
+
+              &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0.4rem;
+                left: 0;
+                right: 0;
+                height: 1rem;
+                width: 100%;
+                background-size: 100% 120%;
+                background-repeat: no-repeat;
+                z-index: -1;
+              }
+            }
+
+            .overview-panel {
+              .circle {
+                top: 6.4rem;
+                left: 20rem;
+              }
+
+              h2 strong::before {
+                background-image: url(/images/underline-overview.svg);
+              }
+            }
+
+            .statistics-panel {
+              .circle {
+                top: -1.6rem;
+                right: 40rem;
+              }
+
+              h2 strong::before {
+                background-image: url(/images/underline-statistics.svg);
+              }
+            }
+
+            .menubar-panel {
+              .circle {
+                top: 10.4rem;
+                left: 12rem;
+              }
+
+              h2 strong::before {
+                background-image: url(/images/underline-menubar.svg);
+              }
+            }
+
+            .integrations-panel {
+              .circle {
+                top: -3.2rem;
+                right: 40rem;
+              }
+
+              h2 strong::before {
+                background-image: url(/images/underline-integrations.svg);
+              }
+            }
+
+            .beta-panel {
+              .circle {
+                top: -6.4rem;
+                left: -6.4rem;
+              }
+
+              h2 strong::before {
+                background-image: url(/images/underline-beta.svg);
+              }
             }
           `}
         >
