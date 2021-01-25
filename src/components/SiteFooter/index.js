@@ -40,14 +40,14 @@ const SiteFooter = () => {
         small
         css={css`
           ${heading.small(theme)};
-          color: #d5f7f0;
+          color: #edf0ee;
           margin: 2.4rem auto;
           max-width: ${config.siteContentWidth};
           position: relative;
 
           a {
             box-shadow: none;
-            color: #d5f7f0;
+            color: #edf0ee;
           }
         `}
       >

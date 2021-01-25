@@ -3,6 +3,7 @@ import { Button, SkipLink, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 
 import Image from 'components/Image';
+import Circle from 'static/images/circle.svg';
 
 const SiteHeader = () => {
   const theme = useTheme();
@@ -24,9 +25,10 @@ const SiteHeader = () => {
           grid-template-columns: 1fr 3fr;
           grid-gap: ${theme.site.mobilePadding};
           align-items: center;
-          max-width: ${theme.site.maxContentWidth};
+          max-width: ${theme.site.maxHeaderWidth};
           margin: 0 auto -1.6rem;
           padding: ${theme.site.mobilePadding};
+          position: relative;
 
           @media screen and (min-width: 560px) {
             grid-template-columns: 1fr 2fr;
@@ -35,7 +37,25 @@ const SiteHeader = () => {
           }
         `}
       >
-        <Image src="src/images/turnip-logo.png" alt="" />
+        <Circle
+          className="circle"
+          css={css`
+            position: absolute;
+            z-index: 0;
+            width: 28rem;
+            height: auto;
+            opacity: 0.05;
+            right: -2.4rem;
+            top: 0rem;
+          `}
+        />
+        <Image
+          css={css`
+            margin-bottom: -4.8rem;
+          `}
+          src="src/images/turnip-logo.png"
+          alt=""
+        />
         <div
           css={css`
             text-align: center;
@@ -46,7 +66,7 @@ const SiteHeader = () => {
             href="#beta"
             primary
             css={css`
-              margin-top: 2.4rem;
+              margin-top: 4.8rem;
               background-color: ${theme.colors.accent.secondary};
               border: none;
               border-bottom: 0.3rem solid ${theme.colors.accent.secondaryDark};
