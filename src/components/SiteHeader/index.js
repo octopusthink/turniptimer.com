@@ -1,5 +1,5 @@
 import { css } from '@emotion/core';
-import { SkipLink, useTheme } from '@octopusthink/nautilus';
+import { Button, SkipLink, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 
 import Image from 'components/Image';
@@ -36,7 +36,26 @@ const SiteHeader = () => {
         `}
       >
         <Image src="src/images/turnip-logo.png" alt="" />
-        <Image src="src/images/turnip-strapline.png" alt="Turnip: Time for freelancers." />
+        <div
+          css={css`
+            text-align: center;
+          `}
+        >
+          <Image src="src/images/turnip-strapline.png" alt="Turnip: Time for freelancers." />
+          <Button
+            href="#beta"
+            primary
+            css={css`
+              margin-top: 2.4rem;
+              background-color: ${theme.colors.accent.secondary};
+              border: none;
+              border-bottom: 0.3rem solid ${theme.colors.accent.secondaryDark};
+              padding: 1.6rem 4rem;
+            `}
+          >
+            Join the beta
+          </Button>
+        </div>
       </div>
     </header>
   );
