@@ -3,6 +3,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 
 import Image from 'components/Image';
+import Circle from 'static/circle.svg';
 
 const Panel = (props) => {
   const theme = useTheme();
@@ -10,6 +11,7 @@ const Panel = (props) => {
     argument,
     background,
     backgroundStatic,
+    circleBG,
     children,
     className,
     dark,
@@ -132,6 +134,8 @@ const Panel = (props) => {
       >
         <div
           css={css`
+            position: relative;
+
             ${!fullwidth &&
               css`
                 margin: auto;
@@ -192,6 +196,18 @@ const Panel = (props) => {
             }
           `}
         >
+          {circleBG && (
+            <Circle
+              className="circle"
+              css={css`
+                position: absolute;
+                z-index: -1;
+                width: 28rem;
+                height: auto;
+                opacity: 0.5;
+              `}
+            />
+          )}
           {children}
         </div>
       </div>
