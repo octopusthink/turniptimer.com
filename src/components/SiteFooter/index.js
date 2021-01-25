@@ -19,7 +19,7 @@ const SiteFooter = () => {
         &::before {
           content: '';
           display: inline-block;
-          background-image: url(/header-bg.png);
+          background-image: url(/images/header-bg.png);
           background-position: bottom center;
           background-size: 100%;
           background-repeat: no-repeat;

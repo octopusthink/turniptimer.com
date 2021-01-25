@@ -3,7 +3,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 
 import Image from 'components/Image';
-import Circle from 'static/circle.svg';
+import Circle from 'static/images/circle.svg';
 
 const Panel = (props) => {
   const theme = useTheme();

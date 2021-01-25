@@ -18,7 +18,7 @@ export const App = (props) => {
         styles={css`
           body {
             background: ${theme.colors.neutral.white};
-            background-image: url(/background-texture.jpg);
+            background-image: url(/images/background-texture.jpg);
             background-position: center;
             background-repeat: repeat;
             margin: 0;

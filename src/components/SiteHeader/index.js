@@ -10,7 +10,7 @@ const SiteHeader = () => {
     <header
       css={css`
         width: 100%;
-        background-image: url(/header-bg.png);
+        background-image: url(/images/header-bg.png);
         background-position: bottom center;
         background-size: 100%;
         background-repeat: no-repeat;
