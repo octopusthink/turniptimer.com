@@ -1,6 +1,8 @@
 import { css } from '@emotion/core';
-import { Button, Paragraph, TextField } from '@octopusthink/nautilus';
+import { Paragraph, TextField } from '@octopusthink/nautilus';
 import React from 'react';
+
+import ButtonStyled from 'components/ButtonStyled';
 
 const SignupForm = () => {
   return (
@@ -40,9 +42,8 @@ const SignupForm = () => {
             noMargin
           />
         </div>
-        <Button
+        <ButtonStyled
           noMargin
-          primary
           type="submit"
           css={css`
             white-space: nowrap;
@@ -51,8 +52,8 @@ const SignupForm = () => {
             }
           `}
         >
-          Sign me up!
-        </Button>
+          Sign me up
+        </ButtonStyled>
       </form>
 
       <Paragraph light small>

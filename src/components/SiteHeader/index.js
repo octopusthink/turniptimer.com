@@ -1,7 +1,8 @@
 import { css } from '@emotion/core';
-import { Button, SkipLink, useTheme } from '@octopusthink/nautilus';
+import { SkipLink, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 
+import ButtonStyled from 'components/ButtonStyled';
 import Image from 'components/Image';
 import Circle from 'static/images/circle.svg';
 
@@ -62,19 +63,15 @@ const SiteHeader = () => {
           `}
         >
           <Image src="src/images/turnip-strapline.png" alt="Turnip: Time for freelancers." />
-          <Button
+          <ButtonStyled
             href="#beta"
             primary
             css={css`
               margin-top: 4.8rem;
-              background-color: ${theme.colors.accent.secondary};
-              border: none;
-              border-bottom: 0.3rem solid ${theme.colors.accent.secondaryDark};
-              padding: 1.6rem 4rem;
             `}
           >
             Join the beta
-          </Button>
+          </ButtonStyled>
         </div>
       </div>
     </header>
