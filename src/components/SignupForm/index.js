@@ -15,6 +15,9 @@ const SignupForm = () => {
         css={css`
           margin-bottom: 3.2rem;
           text-align: center;
+          grid-column: 1 / -1;
+          max-width: 80rem;
+          margin-bottom: 1.2rem;
 
           @media screen and (min-width: 560px) {
             display: flex;
@@ -49,6 +52,7 @@ const SignupForm = () => {
             white-space: nowrap;
             @media screen and (min-width: 560px) {
               margin-left: 0.8rem;
+              margin-bottom: -0.3rem;
             }
           `}
         >
@@ -56,7 +60,13 @@ const SignupForm = () => {
         </ButtonStyled>
       </form>
 
-      <Paragraph light small>
+      <Paragraph
+        light
+        small
+        css={css`
+          max-width: 48rem;
+        `}
+      >
         Your information will only be used to send beta notifications, and will never be sold to
         anyone. You can unsubscribe at any time. Beta users will receive discounts on the full
         product and our undying affection.

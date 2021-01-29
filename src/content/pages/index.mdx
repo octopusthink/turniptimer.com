@@ -1,6 +1,7 @@
 ---
 title: Sign up for the beta.
 ---
+import { css } from '@emotion/core';
 
 import SignupForm from 'components/SignupForm'
 import Panel from 'components/Panel'
@@ -67,17 +68,16 @@ Turnip’s beta supports both a standalone version and a FreeAgent system, but w
 
 </Panel>
 
-<Panel gridTablet="1fr 1fr" gridWide="auto 48rem" fullwidth circleBG className="beta-panel">
+<Panel fullwidth circleBG className="beta-panel">
 
-<div id="beta">
+<div id="beta" css={css` max-width: 48rem; `}>
 
 ## **Join** the beta
 
 Turnip is currently in a limited beta. Want to give it a spin? Drop your details below, and we’ll be in touch shortly.
-
+</div>
 
 <SignupForm />
 
-</div>
 
 </Panel>
