@@ -1,10 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="4" viewBox="0 0 100 4">
-  <defs>
-    <filter id="underline-integrations-a">
-      <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.486275 0 0 0 0 0.752941 0 0 0 0 0.290196 0 0 0 1.000000 0"/>
-    </filter>
-  </defs>
-  <g fill="none" fill-rule="evenodd" stroke-linecap="round" filter="url(#underline-integrations-a)" transform="translate(-.235 .09)">
-    <path stroke="#035F34" stroke-width="2" d="M1.29505614,3.60286893 C18.5198636,3.26229384 70.3217577,-0.665303612 99.1101629,1.59003546" transform="rotate(1 50.203 2.25)"/>
+  <g fill="none" fill-rule="evenodd" stroke-linecap="round" transform="translate(-.235 .09)">
+    <path stroke="#7CC04A" stroke-width="2" d="M1.29505614,3.60286893 C18.5198636,3.26229384 70.3217577,-0.665303612 99.1101629,1.59003546" transform="rotate(1 50.203 2.25)"/>
   </g>
 </svg>

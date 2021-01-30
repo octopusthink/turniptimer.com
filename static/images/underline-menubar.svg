@@ -1,10 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="68" height="4" viewBox="0 0 68 4">
-  <defs>
-    <filter id="underline-menubar-a">
-      <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.549020 0 0 0 0 0.329412 0 0 0 0 0.623529 0 0 0 1.000000 0"/>
-    </filter>
-  </defs>
-  <g fill="none" fill-rule="evenodd" stroke-linecap="round" filter="url(#underline-menubar-a)" transform="translate(.765 .09)">
-    <path stroke="#035F34" stroke-width="2" d="M0.858911968,3.31261091 C12.227048,3.0742644 46.3983606,-0.545590106 65.4150701,1.88031455" transform="rotate(1 33.137 2.18)"/>
+  <g fill="none" fill-rule="evenodd" stroke-linecap="round" transform="translate(.765 .09)">
+    <path stroke="#8C549F" stroke-width="2" d="M0.858911968,3.31261091 C12.227048,3.0742644 46.3983606,-0.545590106 65.4150701,1.88031455" transform="rotate(1 33.137 2.18)"/>
   </g>
 </svg>
