@@ -94,7 +94,7 @@ const fonts = {
   systemFonts:
     '-apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif',
   displayFonts:
-    '-apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif',
+    'moranga, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif',
 };
 
 export const theme = {
@@ -246,8 +246,8 @@ export const theme = {
       body: 400,
       bodyBold: 600,
       heading: 400,
-      pageTitle: 700,
-      subtitle: 300,
+      pageTitle: 400,
+      subtitle: 400,
       interfaceUI: 400,
       interfaceUIBold: 600,
     },

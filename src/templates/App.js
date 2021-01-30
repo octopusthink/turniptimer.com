@@ -23,6 +23,14 @@ export const App = (props) => {
             background-repeat: repeat;
             margin: 0;
           }
+
+          @font-face {
+            font-family: 'moranga';
+            src: url('/fonts/moranga-regular-webfont.woff2') format('woff2'),
+              url('/fonts/moranga-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+          }
         `}
       />
       <div
@@ -51,7 +59,7 @@ export const App = (props) => {
                 content: '';
                 display: block;
                 position: absolute;
-                bottom: 0.4rem;
+                bottom: 0.2rem;
                 left: 0;
                 right: 0;
                 height: 1rem;
