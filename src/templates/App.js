@@ -45,7 +45,7 @@ export const App = (props) => {
           id="content"
           css={css`
             margin: 0 auto;
-            padding: 0 1.6rem;
+            padding: 0;
 
             li:before {
               display: none;

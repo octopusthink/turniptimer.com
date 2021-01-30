@@ -23,18 +23,22 @@ const SiteHeader = () => {
       <div
         css={css`
           display: grid;
-          grid-template-columns: 1fr 3fr;
-          grid-gap: ${theme.site.mobilePadding};
+          grid-gap: ${theme.site.tabletPadding};
           align-items: center;
           max-width: ${theme.site.maxHeaderWidth};
           margin: 0 auto -1.6rem;
-          padding: ${theme.site.mobilePadding};
+          padding: ${theme.site.tabletPadding};
           position: relative;
+          width: 100%;
+
+          @media screen and (min-width: 420px) {
+            grid-gap: ${theme.site.mobilePadding};
+            grid-template-columns: 1fr 2fr;
+          }
 
           @media screen and (min-width: 560px) {
-            grid-template-columns: 1fr 2fr;
             grid-gap: ${theme.site.tabletPadding};
-            margin: 2.4rem auto -4.8rem;
+            margin: 2.4rem auto 0;
           }
         `}
       >
@@ -52,27 +56,30 @@ const SiteHeader = () => {
         />
         <Image
           css={css`
-            margin-bottom: -4.8rem;
+            @media screen and (max-width: 419px) {
+              display: none;
+            }
+
+            @media screen and (min-width: 420px) {
+              grid-row: 1 / 3;
+              margin-bottom: -4.8rem;
+            }
           `}
           src="src/images/turnip-logo.png"
           alt=""
         />
-        <div
+        <Image src="src/images/turnip-strapline.png" alt="Turnip: Time for freelancers." />
+        <ButtonStyled
+          href="#beta"
+          primary
           css={css`
-            text-align: center;
+            grid-column: 2 / -1;
+            margin: 0 auto;
+            align-self: flex-start;
           `}
         >
-          <Image src="src/images/turnip-strapline.png" alt="Turnip: Time for freelancers." />
-          <ButtonStyled
-            href="#beta"
-            primary
-            css={css`
-              margin-top: 4.8rem;
-            `}
-          >
-            Join the beta
-          </ButtonStyled>
-        </div>
+          Join the beta
+        </ButtonStyled>
       </div>
     </header>
   );
