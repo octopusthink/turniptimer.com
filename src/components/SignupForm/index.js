@@ -1,12 +1,12 @@
 import { css } from '@emotion/core';
 import { Paragraph, TextField } from '@octopusthink/nautilus';
-import React from 'react';
+import React, { Fragment } from 'react';
 
-import ButtonStyled from 'components/ButtonStyled';
+import Button from 'components/Button';
 
 const SignupForm = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <form
         action="https://buttondown.email/api/emails/embed-subscribe/octolabs"
         method="post"
@@ -45,7 +45,7 @@ const SignupForm = () => {
             noMargin
           />
         </div>
-        <ButtonStyled
+        <Button
           noMargin
           type="submit"
           css={css`
@@ -57,7 +57,7 @@ const SignupForm = () => {
           `}
         >
           Sign me up
-        </ButtonStyled>
+        </Button>
       </form>
 
       <Paragraph
@@ -71,7 +71,7 @@ const SignupForm = () => {
         anyone. You can unsubscribe at any time. Beta users will receive discounts on the full
         product and our undying affection.
       </Paragraph>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

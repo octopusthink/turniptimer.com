@@ -1,20 +1,15 @@
-import { Button, useTheme } from '@octopusthink/nautilus';
+import { Button as NautilusButton, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 import { css } from '@emotion/core';
 
-const ButtonStyled = (props) => {
+const Button = (props) => {
+  const { children, primary, ...otherProps } = props;
   const theme = useTheme();
-  const { children, className, href, noMargin, to, primary, minimal } = props;
 
   return (
-    <Button
-      className={className}
-      href={href}
+    <NautilusButton
       navigation
       primary={primary}
-      minimal={minimal}
-      noMargin={noMargin}
-      to={to}
       css={css`
         background-color: ${theme.colors.accent.primary};
         border: none;
@@ -46,10 +41,12 @@ const ButtonStyled = (props) => {
             }
           `}
       `}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...otherProps}
     >
       {children}
-    </Button>
+    </NautilusButton>
   );
 };
 
-export default ButtonStyled;
+export default Button;

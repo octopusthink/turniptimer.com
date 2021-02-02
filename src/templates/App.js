@@ -36,7 +36,6 @@ export const App = (props) => {
       <div
         css={css`
           margin: 0 auto;
-          //max-width: ${config.siteWidth};
           padding: 0;
         `}
       >

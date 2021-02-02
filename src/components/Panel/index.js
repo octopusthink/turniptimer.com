@@ -11,7 +11,7 @@ const Panel = (props) => {
     argument,
     background,
     backgroundStatic,
-    circleBG,
+    circleBackground,
     children,
     className,
     dark,
@@ -196,7 +196,7 @@ const Panel = (props) => {
             }
           `}
         >
-          {circleBG && (
+          {circleBackground && (
             <Circle
               className="circle"
               css={css`
