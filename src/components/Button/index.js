@@ -24,6 +24,10 @@ const Button = (props) => {
           color: ${theme.colors.accent.primaryWhite};
         }
 
+        &:focus {
+          box-shadow: 0 0 0 0.4rem ${theme.colors.accent.primaryLight};
+        }
+
         ${primary &&
           css`
             background-color: ${theme.colors.accent.secondary};
