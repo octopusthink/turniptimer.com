@@ -40,14 +40,19 @@ const SiteFooter = () => {
         small
         css={css`
           ${heading.small(theme)};
-          color: #edf0ee;
+          color: ${theme.colors.text.inverse};
           margin: 2.4rem auto;
           max-width: ${config.siteContentWidth};
           position: relative;
 
           a {
             box-shadow: none;
-            color: #edf0ee;
+            color: ${theme.colors.text.inverse};
+
+            &:hover,
+            &:focus {
+              color: ${theme.colors.text.inverseLight};
+            }
           }
         `}
       >
