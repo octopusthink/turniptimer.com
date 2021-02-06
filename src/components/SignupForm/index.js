@@ -1,11 +1,11 @@
 import { css } from '@emotion/core';
 import { Paragraph, TextField } from '@octopusthink/nautilus';
 import React, { Fragment } from 'react';
-import { useReduceMotion } from 'react-reduce-motion';
+import useMedia from 'use-media';
 import Button from 'components/Button';
 
 const SignupForm = () => {
-  const allowsMotion = !useReduceMotion();
+  const allowsMotion = useMedia('(prefers-reduced-motion: no-preference)');
 
   return (
     <Fragment>

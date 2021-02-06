@@ -2,13 +2,13 @@ import { css } from '@emotion/core';
 import { SkipLink, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 import scrollToElement from 'scroll-to-element';
-import { useReduceMotion } from 'react-reduce-motion';
+import useMedia from 'use-media';
 import Button from 'components/Button';
 import Image from 'components/Image';
 import Circle from 'static/images/circle.svg';
 
 const SiteHeader = () => {
-  const allowsMotion = !useReduceMotion();
+  const allowsMotion = useMedia('(prefers-reduced-motion: no-preference)');
   const theme = useTheme();
 
   return (

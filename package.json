@@ -61,7 +61,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-reduce-motion": "^2.0.2",
     "react-test-renderer": "^16.8.6",
     "rehype-react": "^4.0.1",
     "remark-mdx": "^1.5.1",
@@ -70,7 +69,8 @@
     "scroll-to-element": "^2.0.3",
     "shortid": "^2.2.15",
     "smooth-scroll": "^16.1.0",
-    "typeface-inter": "0.0.77"
+    "typeface-inter": "0.0.77",
+    "use-media": "^1.4.0"
   },
   "devDependencies": {
     "@octopusthink/eslint-config": "^0.5.0",
