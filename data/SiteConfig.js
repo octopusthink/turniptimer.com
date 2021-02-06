@@ -16,7 +16,7 @@ const config = {
   pathPrefix: '/',
   // Website description used for RSS feeds/meta description tag. 170 char.
   siteDescription:
-    'Ghost ship is a Gatsby starter that offers blogging, optimised images, a portfolio, and more.',
+    'Turnip Timer is a time tracker for freelancers. Turnip sits in your menu bar, so you’ll always know at a glance if your timer is running.',
   // Path to the RSS file.
   siteRss: '/blog/rss.xml',
   twitter: '@octopusthinks',
@@ -28,10 +28,10 @@ const config = {
   imageWidth: '1200',
 
   /* ------------ Blog Settings ------------ */
-  blogTitle: 'Our Blog',
-  blogDescription: 'The blog of Ghost Ship, famed for its speed.',
-  blogSummary:
-    'AKA our blog, in which we talk about spooky ships and fast websites. It is quite the good time!',
+  blogTitle: 'Turnip Blog',
+  blogDescription:
+    'Turnip Timer is a time tracker for freelancers. Turnip sits in your menu bar, so you’ll always know at a glance if your timer is running.',
+  blogSummary: 'The blog for Turnip.',
   blogUrl: '/blog/',
   dateFormat: 'D MMMM YYYY',
   enableBlogAuthors: true,
