@@ -3,7 +3,6 @@ import { useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 import 'typeface-inter';
 
-import config from 'data/SiteConfig';
 import GhostShipMDX from 'components/GhostShipMDX';
 import SiteHeader from 'components/SiteHeader';
 import SiteFooter from 'components/SiteFooter';

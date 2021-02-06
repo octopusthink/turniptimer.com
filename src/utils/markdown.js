@@ -1,16 +1,11 @@
-import {
-  Heading,
-  List,
-  Link,
-  PageTitle,
-  Paragraph,
-} from '@octopusthink/nautilus';
+import { Heading, List, Link, PageTitle, Paragraph } from '@octopusthink/nautilus';
 import React, { createElement } from 'react';
 import RehypeReact from 'rehype-react';
 
 export const markdown = (htmlAst) => {
   const renderAst = new RehypeReact({
     createElement,
+    /* eslint-disable react/jsx-props-no-spreading */
     components: {
       h1: (props) => <PageTitle {...props} />,
       h2: (props) => <Heading {...props} level={2} />,
@@ -23,6 +18,7 @@ export const markdown = (htmlAst) => {
       a: (originalProps) => {
         const props = { ...originalProps };
 
+        // eslint-disable-next-line react/destructuring-assignment
         if (props.href.startsWith('/') && !props.href.startsWith('//')) {
           props.to = props.href;
           delete props.href;
@@ -36,6 +32,7 @@ export const markdown = (htmlAst) => {
         return <Link {...props} />;
       },
     },
+    /* eslint-enable react/jsx-props-no-spreading */
   }).Compiler;
 
   return renderAst(htmlAst);

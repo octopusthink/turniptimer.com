@@ -1,22 +1,25 @@
 import { css } from '@emotion/core';
 import { SkipLink, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
-
+import scrollToElement from 'scroll-to-element';
+import { useReduceMotion } from 'react-reduce-motion';
 import Button from 'components/Button';
 import Image from 'components/Image';
 import Circle from 'static/images/circle.svg';
 
 const SiteHeader = () => {
+  const allowsMotion = !useReduceMotion();
   const theme = useTheme();
+
   return (
     <header
       css={css`
-        width: 100%;
         background-image: url(/images/header-bg.png);
         background-position: bottom center;
         background-size: 100%;
         background-repeat: no-repeat;
         border-top: 1px solid transparent;
+        width: 100%;
       `}
     >
       <SkipLink />
@@ -77,6 +80,40 @@ const SiteHeader = () => {
             margin: 0 auto;
             align-self: flex-start;
           `}
+          onClick={async (event) => {
+            if (global && global.document && global.document.querySelectorAll) {
+              const betaContainer = global.document.querySelectorAll('#beta');
+
+              if (betaContainer && betaContainer.length) {
+                event.preventDefault();
+
+                event.currentTarget.blur();
+
+                await scrollToElement(betaContainer[0], {
+                  offset: 0,
+                  ease: 'linear',
+                  duration: allowsMotion ? 300 : 1,
+                });
+
+                setTimeout(
+                  () => {
+                    const emailFormId = global.document.querySelectorAll('#bd-email');
+
+                    if (emailFormId && emailFormId.length) {
+                      emailFormId[0].focus();
+
+                      emailFormId[0].classList.add('jiggle');
+
+                      setTimeout(() => {
+                        emailFormId[0].classList.remove('jiggle');
+                      }, 400);
+                    }
+                  },
+                  allowsMotion ? 400 : 0,
+                );
+              }
+            }
+          }}
         >
           Join the beta
         </Button>

@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import React, { Fragment } from 'react';
 
-import Divider from 'components/Divider';
 import PageBody from 'components/PageBody';
 import PageHeader from 'components/PageHeader';
 import PageWrapper from 'components/PageWrapper';

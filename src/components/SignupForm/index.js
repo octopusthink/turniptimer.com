@@ -1,10 +1,12 @@
 import { css } from '@emotion/core';
 import { Paragraph, TextField } from '@octopusthink/nautilus';
 import React, { Fragment } from 'react';
-
+import { useReduceMotion } from 'react-reduce-motion';
 import Button from 'components/Button';
 
 const SignupForm = () => {
+  const allowsMotion = !useReduceMotion();
+
   return (
     <Fragment>
       <form
@@ -43,6 +45,25 @@ const SignupForm = () => {
             type="email"
             autocomplete="email"
             noMargin
+            css={css`
+              ${allowsMotion &&
+                css`
+                  &.jiggle {
+                    animation: jiggle 0.2s infinite ease-in-out;
+                    transform: rotate(-0.25deg);
+                  }
+
+                  @keyframes jiggle {
+                    0% {
+                      transform: rotate(-0.25deg);
+                    }
+
+                    50% {
+                      transform: rotate(0.25deg);
+                    }
+                  }
+                `}
+            `}
           />
         </div>
         <Button
