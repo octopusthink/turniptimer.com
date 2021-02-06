@@ -11,7 +11,7 @@ const config = {
   // Logo used for SEO and manifest.
   siteLogo: '/logos/logo-1024.png',
   // Domain of your website without pathPrefix.
-  siteUrl: 'https://yourdomain.com',
+  siteUrl: 'https://turniptimer.com',
   // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   pathPrefix: '/',
   // Website description used for RSS feeds/meta description tag. 170 char.
