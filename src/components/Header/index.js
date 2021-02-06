@@ -10,8 +10,8 @@ const Header = () => {
         justify-content: space-between;
         font-weight: 600;
         border-bottom: 3px solid #393f49;
-        font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto,
-          Segoe UI, Helvetica Neue, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI,
+          Helvetica Neue, sans-serif;
         font-size: 1.8rem;
         font-weight: 500;
         align-items: center;

@@ -1,13 +1,9 @@
 import { graphql } from 'gatsby';
 import React, { Fragment } from 'react';
 
-import Divider from 'components/Divider';
-import GridLayout from 'components/GridLayout';
 import PageHeader from 'components/PageHeader';
 import PageWrapper from 'components/PageWrapper';
-import PortfolioCard from 'components/PortfolioCard';
 import SEO from 'components/SEO';
-import Statistic from 'components/Statistic';
 import App from 'templates/App';
 
 export const PortfolioList = (props) => {

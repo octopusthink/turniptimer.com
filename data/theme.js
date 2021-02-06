@@ -1,16 +1,15 @@
 const colors = {
   white: '#ffffff',
-  grey0: '#f8f9fa',
-  grey100: '#ebedf0',
-  grey200: '#dee0e5',
-  grey300: '#cfd3da',
-  grey400: '#bec4cd',
-  grey500: '#acb3bf',
-  grey600: '#97a0af',
-  grey700: '#818996',
-  grey800: '#666c76',
-  grey900: '#3b3f45',
-  black: '#181b1c',
+  grey0: '#f0f2f0',
+  grey100: '#d7d9d7',
+  grey200: '#bdbfbd',
+  grey300: '#a4a6a4',
+  grey400: '#8a8c8a',
+  grey500: '#717371',
+  grey600: '#575957',
+  grey700: '#3e403e',
+  grey800: '#242624',
+  grey900: '#0b0d0b',
 
   red0: '#f6e9e9',
   red100: '#edd2d2',
@@ -23,16 +22,16 @@ const colors = {
   red800: '#630000',
   red900: '#470000',
 
-  purple0: '#eeeaf1',
+  purple0: '#f6eaf7',
   purple100: '#dbd4e3',
   purple200: '#c6bad1',
-  purple300: '#ac9bbd',
+  purple300: '#be87cc',
   purple400: '#8a71a2',
   purple500: '#4c2570',
-  purple600: '#432063',
+  purple600: '#6a008c',
   purple700: '#3a1c55',
-  purple800: '#2e1644',
-  purple900: '#1e0e2c',
+  purple800: '#3d0059',
+  purple900: '#1e0030',
 
   yellow0: '#fcf5de',
   yellow100: '#faebbb',
@@ -56,7 +55,7 @@ const colors = {
   cyan800: '#006e76',
   cyan900: '#004f54',
 
-  blue0: '#E3F2FC',
+  blue0: '#e3f2fc',
   blue100: '#cbdae7',
   blue200: '#acc5d8',
   blue300: '#87aac7',
@@ -93,21 +92,24 @@ const colors = {
 const fonts = {
   systemFonts:
     '-apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif',
-  HarrietDisplay: 'Harriet Display',
-  HarrietText: 'Harriet Text',
-  Graphik: 'Graphik',
+  displayFonts:
+    'moranga, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif',
 };
 
 export const theme = {
   // All themeable colour variables go here.
   colors: {
     accent: {
+      primaryWhite: colors.purple0,
+      primaryLight: colors.purple300,
       primary: colors.purple600,
       primaryDark: colors.purple800,
-      primaryLight: colors.purple400,
-      secondary: colors.blue600,
-      secondaryDark: colors.blue800,
-      secondaryLight: colors.blue400,
+      primaryBlack: colors.purple900,
+      secondaryWhite: colors.green0,
+      secondaryLight: colors.green300,
+      secondary: colors.green600,
+      secondaryDark: colors.green800,
+      secondaryBlack: colors.green900,
     },
 
     neutral: {
@@ -117,7 +119,7 @@ export const theme = {
       grey400: colors.grey400,
       grey600: colors.grey600,
       grey800: colors.grey800,
-      black: colors.black,
+      black: colors.grey900,
     },
 
     intent: {
@@ -156,23 +158,23 @@ export const theme = {
     },
 
     text: {
-      default: colors.grey900,
-      dark: colors.black,
+      default: colors.grey700,
+      dark: colors.grey900,
       light: colors.grey800,
       inverse: colors.grey100,
       inverseLight: colors.white,
       inverseDark: colors.grey300,
       emphasis: colors.grey800,
       emphasisBackground: 'transparent',
-      strong: colors.blue800,
-      strongBackground: colors.blue0,
+      strong: colors.grey900,
+      strongBackground: 'transparent',
     },
 
     buttons: {
       neutral: colors.white,
-      default: colors.purple500,
-      defaultDark: colors.purple700,
-      defaultLight: colors.purple300,
+      default: colors.purple600,
+      defaultDark: colors.purple800,
+      defaultLight: colors.purple600,
     },
   },
 
@@ -235,33 +237,33 @@ export const theme = {
   typography: {
     fonts: {
       body: fonts.systemFonts,
-      heading: fonts.systemFonts,
-      interfaceUI: fonts.systemFonts,
+      heading: fonts.displayFonts,
+      interfaceUI: fonts.displayFonts,
     },
 
     fontWeights: {
       body: 400,
       bodyBold: 600,
-      heading: 600,
-      pageTitle: 700,
-      subtitle: 300,
-      interfaceUI: 500,
-      interfaceUIBold: 700,
+      heading: 400,
+      pageTitle: 400,
+      subtitle: 400,
+      interfaceUI: 400,
+      interfaceUIBold: 600,
     },
 
     baseSizes: {
       desktop: 18,
-      mobile: 16,
+      mobile: 14,
     },
 
     scaleModifiers: {
-      desktop: 1.15,
-      mobile: 1.15,
+      desktop: 1.125,
+      mobile: 1.05,
     },
 
     lineHeights: {
-      heading: 1.2,
-      body: 1.5,
+      heading: 1,
+      body: 1.6,
       interfaceUI: 1.2,
     },
   },
@@ -298,6 +300,7 @@ export const theme = {
     tabletPadding: '3.2rem',
     desktopPadding: '6.4rem',
     maxContentWidth: '64rem',
+    maxHeaderWidth: '80rem',
     maxSiteWidth: '120rem',
   },
 };

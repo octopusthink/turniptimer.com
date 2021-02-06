@@ -1,55 +1,83 @@
 ---
 title: Sign up for the beta.
 ---
+import { css } from '@emotion/core';
 
 import SignupForm from 'components/SignupForm'
 import Panel from 'components/Panel'
 
-<Panel gridTablet="1fr 1fr" gridWide="48rem auto" fullwidth>
+<Panel gridTablet="1fr 1fr" gridWide="48rem auto" fullwidth className="overview-panel" circleBackground>
 
 <div>
 
-## Time tracking made easy.
+## Time tracking made **easy**.
 
-If you're a freelancer, you know that your **time really _does_ equal money**. So tracking the time you spend on a task is absolutely critical to your business.
+When you’re a freelancer, **time really does equal money**. Tracking the time you spend on a task is critical to your business.
 
-We know this, because [we're freelancers too](https://octopusthink.com). We built Turnip because we needed a timer app that was simple and flexible. A timer app that gives you what you need to do your work—and then **gets out of your way**.
+We know this, because we’re freelancers too. We built Turnip because we needed a simple, elegant timer app that gives you what you need to do your work—and then gets **out of your way**.
 </div>
 
 ![A screenshot of Turnip showing a list of timeslips in the menu bar.](src/images/timeslips.png)
 
 </Panel>
 
-<Panel gridTablet="1fr 1fr" gridWide="auto 48rem" fullwidth>
+<Panel gridTablet="1fr 1fr" gridWide="auto 48rem" fullwidth className="statistics-panel" circleBackground>
 
 ![A screenshot of Turnip showing charts of time breakdown during the week.](src/images/stats.png)
 
 <div>
 
-## What's Turnip?
+## Work **smarter**, not harder.
 
-Turnip is a **time tracking app for your menu bar** (if you're a Mac) or system tray (if you're a PC). It offers both a standalone version and a [FreeAgent](https://freeagent.com) integration. (More integrations coming soon!)
-
-- ▶️ Pause, start, & add new timers from your menu bar.
-- 🗂 Attach timers to tasks, projects, and clients.
-- ✏️ Edit & round time on the fly.
-- 📊 Understand how you spend your time.
+Where _does_ the time go? Turnip uses statistics and charts to help you understand how you’re spending your time. Keep tabs on your time and take breaks to avoid burnout.
 
 </div>
 
 </Panel>
 
-<Panel gridWide="auto 48rem">
+<Panel gridTablet="1fr 1fr" gridWide="48rem auto" fullwidth circleBackground className="menubar-panel">
 
 <div>
 
-## Join the beta!
+## Always by your **side**.
 
-Turnip is currently in a limited beta. If you'd like to try it, enter your email and we'll be in touch. We promise not to spam you, and you can unsubscribe at any time.
+Turnip sits in your menu bar, so you’ll always know at a glance if your timer is running. You can switch tasks, edit your time, start a new timer, or access statistics—all without leaving what you’re currently working on.
+</div>
 
+![A screenshot of Turnip starting a new timer.](src/images/new-timer.png)
+
+</Panel>
+
+<Panel gridTablet="1fr 1fr" gridWide="auto 48rem" fullwidth circleBackground className="integrations-panel">
+
+<div css={css`max-width: 32rem;`}>
+
+![FreeAgent logo](src/images/freeagent.png)
 
 </div>
 
+<div>
+
+## Integrate with **your tools**.
+
+Spend more time working and less time on adminstrative work by integrating directly with your accounting system.
+
+Turnip currently works on its own or with FreeAgent. We're working on adding more integrations for the release.
+
+</div>
+
+</Panel>
+
+<Panel fullwidth circleBackground className="beta-panel">
+
+<div id="beta" css={css` max-width: 48rem; `}>
+
+## **Join** the beta
+
+Turnip is currently in a limited beta. Want to give it a spin? Drop your details below, and we’ll be in touch shortly.
+</div>
+
 <SignupForm />
+
 
 </Panel>

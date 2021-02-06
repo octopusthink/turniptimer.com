@@ -48,7 +48,7 @@ export const BlogPost = (props) => {
       </Tags>
 
       {tags.length && (
-        <React.Fragment>
+        <Fragment>
           <span
             css={css`
               ${metadata.small(theme)};
@@ -80,7 +80,7 @@ export const BlogPost = (props) => {
               );
             })}
           </Tags>
-        </React.Fragment>
+        </Fragment>
       )}
     </div>
   );
