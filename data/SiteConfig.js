@@ -2,12 +2,12 @@ const config = {
   // Set to your site's language/locale.
   language: 'en-GB',
   // Site title.
-  siteTitle: 'Turnip: A timer for freelancers',
+  siteTitle: 'Turnip: time for freelancers.',
   // Short site title for homescreen (PWA/Progressive Web Apps).
   // Staying under 12 characters will prevent any truncation on phone screens.
   siteTitleShort: 'Turnip',
   // Alternative site title for SEO.
-  siteTitleAlt: 'Turnip: The timer for freelancers.',
+  siteTitleAlt: 'Turnip: time tracking for freelancers.',
   // Logo used for SEO and manifest.
   siteLogo: '/logos/logo-1024.png',
   // Domain of your website without pathPrefix.
@@ -16,7 +16,7 @@ const config = {
   pathPrefix: '/',
   // Website description used for RSS feeds/meta description tag. 170 char.
   siteDescription:
-    'Turnip Timer is a time tracker for freelancers. Turnip sits in your menu bar, so you’ll always know at a glance if your timer is running.',
+    'Menu bar time tracker for freelancers and small businesses. Integrates with popular accounting services.',
   // Path to the RSS file.
   siteRss: '/blog/rss.xml',
   twitter: '@octopusthinks',
