@@ -19,7 +19,6 @@ const SiteHeader = () => {
         background-size: 100%;
         background-repeat: no-repeat;
         border-top: 1px solid transparent;
-        overflow: hidden;
         width: 100%;
       `}
     >

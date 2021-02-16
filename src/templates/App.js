@@ -21,6 +21,10 @@ export const App = (props) => {
             background-position: center;
             background-repeat: repeat;
             margin: 0;
+
+            @media screen and (max-width: 848px) {
+              overflow-x: hidden;
+            }
           }
 
           @font-face {
