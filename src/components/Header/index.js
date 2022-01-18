@@ -1,6 +1,6 @@
 import { Icon, Link } from '@octopusthink/nautilus';
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 const Header = () => {
   return (

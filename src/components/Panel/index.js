@@ -1,6 +1,6 @@
 import { useTheme } from '@octopusthink/nautilus';
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 import Image from 'components/Image';
 import Circle from 'static/images/circle.svg';
