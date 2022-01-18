@@ -43,6 +43,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         env:
-          BRANCH: gh-pages
-          CNAME: turniptimer.com
-          FOLDER: public
+          branch: gh-pages
+          folder: public
