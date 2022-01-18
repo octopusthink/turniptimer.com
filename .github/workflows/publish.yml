@@ -41,7 +41,7 @@ jobs:
       - name: Build website
         run: npm run build
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.2.2
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
         env:
           BRANCH: gh-pages
           CNAME: turniptimer.com
