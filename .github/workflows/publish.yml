@@ -41,11 +41,8 @@ jobs:
       - name: Build website
         run: npm run build
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@2.0.0
+        uses: JamesIves/github-pages-deploy-action@4.2.2
         env:
-          ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN_GH_PAGES }}
           BRANCH: gh-pages
-          COMMIT_EMAIL: robots@octopusthink.com
-          COMMIT_NAME: Octopus Think Robot
           CNAME: turniptimer.com
           FOLDER: public
