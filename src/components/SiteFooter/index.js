@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Paragraph, Link, heading, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 

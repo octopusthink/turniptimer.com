@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { Paragraph, TextField } from '@octopusthink/nautilus';
 import React, { Fragment } from 'react';
 import useMedia from 'use-media';

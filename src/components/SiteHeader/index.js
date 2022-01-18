@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { SkipLink, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 import scrollToElement from 'scroll-to-element';

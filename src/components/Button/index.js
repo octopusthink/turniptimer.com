@@ -1,6 +1,6 @@
 import { Button as NautilusButton, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 const Button = (props) => {
   const { children, primary, ...otherProps } = props;

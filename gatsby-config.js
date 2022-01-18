@@ -8,7 +8,6 @@ const moment = require('moment');
 const config = require('./data/SiteConfig.js');
 
 let feedSettings;
-let matomoSettings;
 const mapping = {};
 
 const { enableBlog } = require('./src/utils/settings');
@@ -116,13 +115,6 @@ if (enableBlog) {
   }
 }
 
-if (config.matomoOptions && Object.keys(config.matomoOptions).length) {
-  matomoSettings = {
-    resolve: 'gatsby-plugin-matomo',
-    options: config.matomoOptions,
-  };
-}
-
 module.exports = {
   siteMetadata: {
     author: config.twitter,
@@ -148,13 +140,18 @@ module.exports = {
     feedSettings,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
-    matomoSettings,
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `turniptimer.com`,
+      },
+    },
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         // Exclude specific pages or groups of pages using glob params
         // See: https://github.com/isaacs/minimatch
-        exclude: [],
+        excludes: [],
       },
     },
     'gatsby-plugin-sharp',
@@ -163,7 +160,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
-        defaultLoaders: {
+        defaultLayouts: {
           default: require.resolve('./src/components/MDXLayout'),
         },
         extensions: ['.mdx', '.md'],
@@ -174,7 +171,6 @@ module.exports = {
               maxWidth: 1280,
             },
           },
-          { resolve: 'gatsby-remark-reading-time' },
           { resolve: 'gatsby-remark-smartypants' },
         ],
       },
@@ -203,9 +199,16 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-favicon',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        logo: './static/favicon.png',
+        name: `Turnip Timer Website`,
+        short_name: `Turnip Timer`,
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#ffffff`,
+        display: `standalone`,
+        icon: './static/favicon.png',
+        theme_color_in_head: false,
       },
     },
     {

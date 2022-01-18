@@ -2,7 +2,7 @@ import { Link, Tags, metadata, useTheme } from '@octopusthink/nautilus';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React, { Fragment } from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import dayjs from 'dayjs';
 
 import AuthorByline from 'components/AuthorByline';

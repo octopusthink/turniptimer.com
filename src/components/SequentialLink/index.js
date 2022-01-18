@@ -1,6 +1,6 @@
 import { Heading, Icon, Link, Tags } from '@octopusthink/nautilus';
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 const SequentialLink = (props) => {
   const { direction, title, to } = props;

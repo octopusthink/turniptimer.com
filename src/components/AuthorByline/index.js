@@ -1,6 +1,6 @@
 import { Heading, Paragraph, Tags } from '@octopusthink/nautilus';
 import React from 'react';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 const AuthorByline = (props) => {
   const { alt, avatar, children, name } = props;
