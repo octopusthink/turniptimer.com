@@ -367,7 +367,7 @@ const onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     node: {
       fs: 'empty',
-      path: 'empty',
+      // path: 'empty',
     },
     resolve: {
       extensions: ['.mjs', '.jsx', '.js', '.json'],

@@ -42,16 +42,6 @@ const config = {
   // `useDatesInSlugs: true`  -> `/blog/2019-05-09-my-post/`
   useDatesInSlugs: true,
 
-  /* ------------ Matamo Tracking Settings ------------ */
-  matomoOptions: {
-    siteId: 10,
-    matomoUrl: 'https://analytics.octopusth.ink',
-    siteUrl: 'https://turniptimer.com',
-    requireConsent: false,
-    // Removes the need for cookie notices and is less creepy! :-)
-    disableCookies: true,
-  },
-
   /* ------------ Visual Appearance Settings ------------ */
   // Replace this with a Nautilus Theme object.
   // See: https://nautilus.octopusthink.com
