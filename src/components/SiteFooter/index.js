@@ -68,7 +68,7 @@ const SiteFooter = () => {
         <Link as="a" href="https://octopusthink.com">
           Octopus Think
         </Link>
-        ·<Link to="/privacy">Privacy</Link>
+        · <Link to="/roadmap">Roadmap</Link> · <Link to="/privacy">Privacy</Link>
       </Paragraph>
     </footer>
   );
