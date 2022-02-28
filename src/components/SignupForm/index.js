@@ -90,7 +90,7 @@ const SignupForm = () => {
         `}
       >
         Your information will only be used to send beta notifications.{' '}
-        <Link to="/privacy">Privacy.</Link>
+        <Link to="/privacy"><VisuallyHidden>Read our </VisuallyHidden>Privacy<VisuallyHidden> Policy</VisuallyHidden></Link>
       </Paragraph>
     </Fragment>
   );
