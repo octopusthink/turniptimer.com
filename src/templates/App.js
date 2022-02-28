@@ -49,10 +49,6 @@ export const App = (props) => {
             margin: 0 auto;
             padding: 0;
 
-            li:before {
-              display: none;
-            }
-
             h2 strong {
               font-weight: 400;
               position: relative;
@@ -70,6 +66,10 @@ export const App = (props) => {
                 background-repeat: no-repeat;
                 z-index: -1;
               }
+            }
+
+            p + h2 {
+              margin-top: 6.4rem !important;
             }
 
             .overview-panel {
