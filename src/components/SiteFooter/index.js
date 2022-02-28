@@ -43,6 +43,7 @@ const SiteFooter = () => {
           margin: 2.4rem auto;
           max-width: ${config.siteContentWidth};
           position: relative;
+          font-size: 1.6rem;
 
           a {
             box-shadow: none;
