@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Paragraph, Link, heading, useTheme } from '@octopusthink/nautilus';
+import { Paragraph, Link, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 
 import config from 'data/SiteConfig';
@@ -39,11 +39,11 @@ const SiteFooter = () => {
         noMargin
         small
         css={css`
-          ${heading.small(theme)};
           color: ${theme.colors.text.inverse};
           margin: 2.4rem auto;
           max-width: ${config.siteContentWidth};
           position: relative;
+          font-size: 1.6rem;
 
           a {
             box-shadow: none;
@@ -67,7 +67,9 @@ const SiteFooter = () => {
         by{' '}
         <Link as="a" href="https://octopusthink.com">
           Octopus Think
-        </Link>
+        </Link>{' '}
+        · <Link to="/">About</Link> · <Link to="/roadmap">Roadmap</Link> ·{' '}
+        <Link to="/privacy">Privacy</Link>
       </Paragraph>
     </footer>
   );

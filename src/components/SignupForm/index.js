@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Paragraph, TextField } from '@octopusthink/nautilus';
+import { Link, Paragraph, TextField, VisuallyHidden } from '@octopusthink/nautilus';
 import React, { Fragment } from 'react';
 import useMedia from 'use-media';
 import Button from 'components/Button';
@@ -85,12 +85,14 @@ const SignupForm = () => {
         light
         small
         css={css`
-          max-width: 48rem;
+          max-width: 56rem;
+          font-size: 1.6rem;
         `}
       >
-        Your information will only be used to send beta notifications, and will never be sold to
-        anyone. You can unsubscribe at any time. Beta users will receive discounts on the full
-        product and our undying affection.
+        Your information will only be used to send beta notifications.{' '}
+        <Link to="/privacy">
+          <VisuallyHidden>Read our </VisuallyHidden>Privacy<VisuallyHidden> Policy</VisuallyHidden>
+        </Link>
       </Paragraph>
     </Fragment>
   );

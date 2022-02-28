@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { SkipLink, useTheme } from '@octopusthink/nautilus';
+import { Link, SkipLink, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 import scrollToElement from 'scroll-to-element';
 import useMedia from 'use-media';
@@ -57,8 +57,11 @@ const SiteHeader = () => {
             top: 0rem;
           `}
         />
-        <Image
+        <Link
+          to="/"
           css={css`
+            box-shadow: none;
+
             @media screen and (max-width: 419px) {
               display: none;
             }
@@ -67,13 +70,17 @@ const SiteHeader = () => {
               grid-row: 1 / 3;
               margin-bottom: -4.8rem;
             }
+
+            &:hover {
+              box-shadow: none;
+            }
           `}
-          src="src/images/turnip-logo.png"
-          alt=""
-        />
+        >
+          <Image src="src/images/turnip-logo.png" alt="" />
+        </Link>
         <Image src="src/images/turnip-strapline.png" alt="Turnip: Time for freelancers." />
         <Button
-          href="#beta"
+          href="/#beta"
           primary
           css={css`
             grid-column: 2 / -1;
