@@ -49,6 +49,10 @@ export const App = (props) => {
             margin: 0 auto;
             padding: 0;
 
+            h1 {
+              color: ${theme.colors.text.default};
+            }
+
             h2 strong {
               font-weight: 400;
               position: relative;
@@ -70,6 +74,10 @@ export const App = (props) => {
 
             p + h2 {
               margin-top: 6.4rem !important;
+            }
+
+            .Nautilus-Icon--external-link {
+              margin-top: -0.4rem;
             }
 
             .overview-panel {
