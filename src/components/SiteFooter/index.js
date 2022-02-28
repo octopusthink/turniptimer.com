@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Paragraph, Link, heading, useTheme } from '@octopusthink/nautilus';
+import { Paragraph, Link, useTheme } from '@octopusthink/nautilus';
 import React from 'react';
 
 import config from 'data/SiteConfig';

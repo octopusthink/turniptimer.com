@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { Link, Paragraph, TextField } from '@octopusthink/nautilus';
+import { Link, Paragraph, TextField, VisuallyHidden } from '@octopusthink/nautilus';
 import React, { Fragment } from 'react';
 import useMedia from 'use-media';
 import Button from 'components/Button';
@@ -90,7 +90,9 @@ const SignupForm = () => {
         `}
       >
         Your information will only be used to send beta notifications.{' '}
-        <Link to="/privacy"><VisuallyHidden>Read our </VisuallyHidden>Privacy<VisuallyHidden> Policy</VisuallyHidden></Link>
+        <Link to="/privacy">
+          <VisuallyHidden>Read our </VisuallyHidden>Privacy<VisuallyHidden> Policy</VisuallyHidden>
+        </Link>
       </Paragraph>
     </Fragment>
   );
