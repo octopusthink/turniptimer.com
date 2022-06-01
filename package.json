@@ -90,7 +90,7 @@
     "gatsby-plugin-manifest": "^4.5.1",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
-    "sharp": "^0.28.0"
+    "sharp": "^0.30.5"
   },
   "resolutions": {
     "sharp": "^0.28.0"
